@@ -20,17 +20,17 @@ sort: 2
 ``PIL``用于截屏，``cuckoo``生成报告中会有``windows 7``的截图。
 首先进到``C:\Python27\Scripts``路径下，在此路径下安装``pillow``。
 
-      >cd C:\Python27\Scripts
-      >pip install Pillow
-      Collecting Pillow
-        Downloading Pillow-4.3.0-cp27-cp27m-win32.whl (1.3MB
-          100% |################################| 1.3MB 114k
-      Collecting olefile (from Pillow)
-        Downloading olefile-0.44.zip (74kB)
-          100% |################################| 81kB 145kB
-      Installing collected packages: olefile, Pillow
-        Running setup.py install for olefile ... done
-      Successfully installed Pillow-4.3.0 olefile-0.44
+    >cd C:\Python27\Scripts
+    >pip install Pillow
+    Collecting Pillow
+    Downloading Pillow-4.3.0-cp27-cp27m-win32.whl (1.3MB
+      100% |################################| 1.3MB 114k
+    Collecting olefile (from Pillow)
+    Downloading olefile-0.44.zip (74kB)
+      100% |################################| 81kB 145kB
+    Installing collected packages: olefile, Pillow
+    Running setup.py install for olefile ... done
+    Successfully installed Pillow-4.3.0 olefile-0.44
 
 ### 2.2.3 agent.py设置开机自启动
 
@@ -41,11 +41,11 @@ sort: 2
 使用``Administrator``权限启动``cmd``,并依序在cmd中输入以下指令
 ``[USERNAME]``和``[PASSWORD]``需替换为登入的``Windows user``与对应的``password``
 
-      >reg add "hklm\software\Microsoft\Windows NT\CurrentVersion\WinLogon" /v DefaultUserName /d [USERNAME] /t REG_SZ /f
-      >reg add "hklm\software\Microsoft\Windows NT\CurrentVersion\WinLogon" /v DefaultPassword /d [PASSWORD] /t REG_SZ /f
-      >reg add "hklm\software\Microsoft\Windows NT\CurrentVersion\WinLogon" /v AutoAdminLogon /d 1 /t REG_SZ /f
-      >reg add "hklm\system\CurrentControlSet\Control\TerminalServer" /v AllowRemoteRPC /d 0x01 /t REG_DWORD /f
-      >reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v    LocalAccountTokenFilterPolicy /d 0x01 /t REG_DWORD /f
+    >reg add "hklm\software\Microsoft\Windows NT\CurrentVersion\WinLogon" /v DefaultUserName /d [USERNAME] /t REG_SZ /f
+    >reg add "hklm\software\Microsoft\Windows NT\CurrentVersion\WinLogon" /v DefaultPassword /d [PASSWORD] /t REG_SZ /f
+    >reg add "hklm\software\Microsoft\Windows NT\CurrentVersion\WinLogon" /v AutoAdminLogon /d 1 /t REG_SZ /f
+    >reg add "hklm\system\CurrentControlSet\Control\TerminalServer" /v AllowRemoteRPC /d 0x01 /t REG_DWORD /f
+    >reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v    LocalAccountTokenFilterPolicy /d 0x01 /t REG_DWORD /f
 
 #### 2.2.5 配置连接网络
 
