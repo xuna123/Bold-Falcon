@@ -9,9 +9,9 @@ sort: 2
 首先要在Ubuntu的vitrualbox中创建一个虚拟机，设定为windows 7 64位操作系统。
 
 ### 2.2.1 关闭防火墙、自动更新、UAC
-关闭防火墙：https://jingyan.baidu.com/article/dca1fa6f0953bbf1a44052d7.html
-关闭自动更新：https://jingyan.baidu.com/article/03b2f78c4ce2ad5ea337ae5b.html
-关闭UAC:http://www.win7zhijia.cn/jiaocheng/win7_26850.html
++ [关闭防火墙](https://jingyan.baidu.com/article/dca1fa6f0953bbf1a44052d7.html)
++ [关闭自动更新](https://jingyan.baidu.com/article/03b2f78c4ce2ad5ea337ae5b.html)
++ [关闭UAC](http://www.win7zhijia.cn/jiaocheng/win7_26850.html)
 ### 2.2.2 安装PIL
 PIL用于截屏，cuckoo生成报告中会有windows 7的截图。
 首先进到C:\Python27\Scripts路径下，在此路径下安装pillow。
