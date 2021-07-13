@@ -43,7 +43,7 @@ PIL用于截屏，cuckoo生成报告中会有windows 7的截图。
 #### 2.2.5 配置连接网络
 
 在virtualbox中添加一块网卡，管理——主机网络管理器，按照下面信息进行设置。
-![image](https://user-images.githubusercontent.com/16918550/124224460-43f95f80-db38-11eb-8a0b-f365f4f00b50.png)
+![image](https://user-images.githubusercontent.com/16918550/124224460-43f95f80-db38-11eb-8a0b-f365f4f00b50.png){:width="256px" height="176px"}
 设置windows 7网络，设置为Host-Only。界面名称为刚刚设置的网卡。
 ![image](https://user-images.githubusercontent.com/16918550/124224491-51164e80-db38-11eb-9348-66ac2cb4c6c7.png)
 进入Windows 7 系统，设置win7 ip网络
