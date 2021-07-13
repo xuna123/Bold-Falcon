@@ -47,7 +47,7 @@ sort: 2
     >reg add "hklm\system\CurrentControlSet\Control\TerminalServer" /v AllowRemoteRPC /d 0x01 /t REG_DWORD /f
     >reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v    LocalAccountTokenFilterPolicy /d 0x01 /t REG_DWORD /f
 
-#### 2.2.5 配置连接网络
+### 2.2.5 配置连接网络
 
 在``virtualbox``中添加一块网卡，管理——主机网络管理器，按照下面信息进行设置。
 
@@ -103,7 +103,7 @@ sort: 2
 
     ping www.baidu.com
 
-#### 2.2.6 快照
+### 2.2.6 快照
 
 要保证``agent.py``文件时运行状态，可以在``cmd``控制台启动，成功后对``win7``进行快照 名字取为``snapshot``。
 
