@@ -6,13 +6,17 @@ sort: 2
 
 ## 2.1 准备主机(HOST)
 ## 2.2 准备客户机(Guest)
-首先要在Ubuntu的vitrualbox中创建一个虚拟机，设定为windows 7 64位操作系统。
+
+首先要在``Ubuntu``的``vitrualbox``中创建一个虚拟机，设定为``windows 7 64``位操作系统。
 
 ### 2.2.1 关闭防火墙、自动更新、UAC
+
 + [关闭防火墙](https://jingyan.baidu.com/article/dca1fa6f0953bbf1a44052d7.html)
 + [关闭自动更新](https://jingyan.baidu.com/article/03b2f78c4ce2ad5ea337ae5b.html)
 + [关闭UAC](http://www.win7zhijia.cn/jiaocheng/win7_26850.html)
+
 ### 2.2.2 安装PIL
+
 PIL用于截屏，cuckoo生成报告中会有windows 7的截图。
 首先进到C:\Python27\Scripts路径下，在此路径下安装pillow。
 
@@ -29,8 +33,11 @@ PIL用于截屏，cuckoo生成报告中会有windows 7的截图。
       Successfully installed Pillow-4.3.0 olefile-0.44
 
 ### 2.2.3 agent.py设置开机自启动
+
 前面主机中找到的agent.py文件上传到windows 7中，建议用send anywhere比较快速。把上传成功的agent.py文件放进C:\Users[USER]\AppData\Roaming\MicroSoft\Windows\Start Menu\Programs\Startup\ 下，并把后缀名改为.pyw。其中users是指用户名。
+
 ### 2.2.4 配置系统开机自动登录
+
 使用Administrator权限启动cmd,并依序在cmd中输入以下指令
 [USERNAME]和[PASSWORD]需替换为登入的Windows user与对应的password
 
@@ -92,8 +99,11 @@ DNS服务
     ping www.baidu.com
 
 #### 2.2.6 快照
+
 要保证agent.py文件时运行状态，可以在cmd控制台启动，成功后对win7进行快照 名字取为snapshot。
+
 #### 2.2.7 设置cuckoo配置文件
+
 配置virtualbox.conf：
 
     $ vim virtualbox.conf
