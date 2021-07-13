@@ -107,7 +107,7 @@ sort: 2
 
 要保证``agent.py``文件时运行状态，可以在``cmd``控制台启动，成功后对``win7``进行快照 名字取为``snapshot``。
 
-#### 2.2.7 设置cuckoo配置文件
+### 2.2.7 设置cuckoo配置文件
 
 配置``virtualbox.conf``：
 
