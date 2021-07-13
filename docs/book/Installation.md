@@ -50,8 +50,8 @@ sort: 2
 ### 2.2.5 配置连接网络
 
 在``virtualbox``中添加一块网卡，管理——主机网络管理器，按照下面信息进行设置。
-<img src="https://user-images.githubusercontent.com/16918550/124224460-43f95f80-db38-11eb-8a0b-f365f4f00b50.png" alt="网卡配置" style="zoom:67%;" />
-![image](https://user-images.githubusercontent.com/16918550/124224460-43f95f80-db38-11eb-8a0b-f365f4f00b50.png){:align="center" width="700px" height="500px"}
+
+<img src="https://user-images.githubusercontent.com/16918550/124224460-43f95f80-db38-11eb-8a0b-f365f4f00b50.png" align="middle" alt="网卡配置" style="zoom:67%;" />
 
 设置windows 7网络，设置为Host-Only。界面名称为刚刚设置的网卡。
 
